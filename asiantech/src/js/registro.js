@@ -10,22 +10,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function validateName (name) {
     const regex = /^[a-zA-Z\s]+$/
-    return regex.test(name)
+    return regex.test(name.trim())
   }
 
   function validateEmail (email) {
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
-    return regex.test(email)
+    return regex.test(email.trim())
   }
-  /*ver bien como funciona validar cod de area y numeros de tel en Argentina */
   function validatePhone (phone) {
     const regex = /^\d{2,10}$/
-    return regex.test(phone)
+    return regex.test(phone.trim())
   }
 
   function validatePassword (password) {
     const regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{8,}$/
-    return regex.test(password)
+    return regex.test(password.trim())
   }
 
   form.addEventListener('submit', (e) => {
