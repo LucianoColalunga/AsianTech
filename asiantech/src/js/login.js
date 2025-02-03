@@ -6,7 +6,6 @@ btn.addEventListener('click', () => {
     const emailValue = email.value;
     const passwordValue = password.value;
 
-    //validacion de que no esten vacios
     if (emailValue && passwordValue){
 
         console.log('Login successfull');
@@ -15,5 +14,6 @@ btn.addEventListener('click', () => {
         alert('Por favor, ingresa tu correo y contraseña');
 
     }
+    
 });
 

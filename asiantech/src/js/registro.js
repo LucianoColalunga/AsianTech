@@ -7,6 +7,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const celular = document.getElementById('celular')
   const contrasena1 = document.getElementById('contrasena1')
   const contrasena2 = document.getElementById('contrasena2')
+  const mode = document.getElementById('mode')
+
 
   function validateName (name) {
     const regex = /^[a-zA-Z\s]+$/
